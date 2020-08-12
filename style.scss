@@ -8,8 +8,8 @@ $Very-Dark-Blue: hsl(209, 33%, 12%);
 
 //Typography
 
-$font-size: 20px;
-$font-family: 'Libre Franklin',
+$size: 20px;
+$font: 'Libre Franklin',
 sans-serif;
 //Weights: 300, 600, 700
 
@@ -19,6 +19,74 @@ sans-serif;
     box-sizing: border-box;
 }
 
+%btn {
+    border: none;
+    border-radius: 25px;
+}
+
 body {
-    
+    text-align: center;
+    font-family: $font;
+    font-size: $size;
+    color: $Very-Dark-Blue;
+    padding: 80px 0;
+
+    header {
+        div:nth-of-type(1) {
+            p {
+                font-weight: 700;
+
+                span {
+                    color: $Blue;
+                }
+            }
+        }
+
+        div:nth-of-type(2) {
+            padding-top: 50px;
+
+            p:nth-of-type(1) {
+                color: $Gray;
+                font-size: 2rem;
+
+                strong {
+                    color: $Very-Dark-Blue;
+
+                }
+            }
+
+            p:nth-of-type(2) {
+                padding-top: 25px;
+                font-size: 0.9rem;
+            }
+        }
+
+        div:nth-of-type(3) {
+            padding-top: 25px;
+
+            input:nth-of-type(1) {
+                @extend %btn;
+                width: 30%;
+                height: 50px;
+                border: 1px solid $Gray;
+                padding: 0 25px;
+                margin: 0 10px;
+
+                ::placeholder {
+                    color: #ccc;
+                }
+            }
+
+            input:nth-of-type(2) {
+                @extend %btn;
+                width: 15%;
+                height: 50px;
+                background-color: $Blue;
+                color: #fff;
+                font-weight: 700px;
+                box-shadow: 2px 2px 10px $Gray,
+                    1px 1px 2px $Gray;
+            }
+        }
+    }
 }
