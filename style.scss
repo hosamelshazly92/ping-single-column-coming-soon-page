@@ -62,7 +62,7 @@ body {
         }
 
         div:nth-of-type(3) {
-            padding-top: 25px;
+            padding-top: 50px;
 
             input:nth-of-type(1) {
                 @extend %btn;
@@ -119,6 +119,60 @@ body {
             font-size: 0.8rem;
             color: $Gray;
             margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    body {
+        padding: 170px 50px 70px 50px;
+
+        header {
+            div:nth-of-type(3) {
+
+                input:nth-of-type(1) {
+                    width: 80%;
+                    padding: 0 25px;
+                    margin: 0 auto 20px auto;
+                }
+
+                input:nth-of-type(2) {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        main {
+            padding-top: 100px;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        footer {
+            padding-top: 80px;
+
+            div {
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 0 10px;
+                    padding: 5px;
+                    border-radius: 100%;
+
+                    &:hover {
+                        border: 1px solid $Blue;
+                    }
+                }
+            }
+
+            p {
+                font-size: 0.8rem;
+                color: $Gray;
+                margin-top: 40px;
+            }
         }
     }
 }
