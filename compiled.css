@@ -63,5 +63,23 @@ body main {
 body main img {
   width: 50%;
 }
+body footer {
+  padding-top: 80px;
+}
+body footer div img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 100%;
+}
+body footer div img:hover {
+  border: 1px solid #4f7df3;
+}
+body footer p {
+  font-size: 0.8rem;
+  color: #969696;
+  margin-top: 40px;
+}
 
 /*# sourceMappingURL=compiled.css.map */
