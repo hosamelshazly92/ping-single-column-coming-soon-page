@@ -107,6 +107,7 @@ body {
                 height: 30px;
                 margin: 0 10px;
                 padding: 5px;
+                border: 1px solid #fff;
                 border-radius: 100%;
 
                 &:hover {
@@ -128,6 +129,18 @@ body {
         padding: 170px 50px 70px 50px;
 
         header {
+            div:nth-of-type(1) {
+                p {
+                    font-size: 2rem;
+                }
+            }
+
+            div:nth-of-type(2) {
+                p:nth-of-type(2) {
+                    font-size: 1rem;
+                }
+            }
+
             div:nth-of-type(3) {
 
                 input:nth-of-type(1) {
@@ -137,6 +150,7 @@ body {
                 }
 
                 input:nth-of-type(2) {
+                    font-size: 1rem;
                     width: 80%;
                     margin: 0 auto;
                 }
@@ -152,26 +166,20 @@ body {
         }
 
         footer {
-            padding-top: 80px;
+            padding-top: 270px;
 
             div {
                 img {
-                    width: 30px;
-                    height: 30px;
-                    margin: 0 10px;
-                    padding: 5px;
-                    border-radius: 100%;
-
-                    &:hover {
-                        border: 1px solid $Blue;
-                    }
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 20px;
+                    padding: 8px;
                 }
             }
 
             p {
-                font-size: 0.8rem;
-                color: $Gray;
-                margin-top: 40px;
+                margin-top: 80px;
+                font-size: 1rem;
             }
         }
     }
