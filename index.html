@@ -37,8 +37,13 @@
         </div>
         
         <div>
-            <input type="text" placeholder="Your email address...">
-            <input type="submit" value="Notify Me">
+            <input id="email" type="email" name="email" placeholder="Your email address..." required>
+            
+            <input id="submit" type="submit" value="Notify Me">
+            
+            <div class="hint">
+                <p>Please provide a valid email address</p>
+            </div>
         </div>
     </header>
     
@@ -57,4 +62,6 @@
             &copy; Copyright Ping. All rights reserved
         </p>
     </footer>
+    
+    <script type="text/javascript" src="script.js"></script>
 </body></html>
